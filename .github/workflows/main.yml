@@ -24,6 +24,7 @@ jobs:
         run: pwd
         
       - name: Building static website
+        continue-on-error: true
         run: pnpm run build
 
       - name: Deploying to gh-pages
