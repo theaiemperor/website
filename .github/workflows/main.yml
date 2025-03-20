@@ -21,7 +21,7 @@ jobs:
         run: pnpm i
 
       - name: Current directory
-        run: cwd
+        run: pwd
         
       - name: Building static website
         run: pnpm run build
