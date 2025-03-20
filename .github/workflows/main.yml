@@ -20,7 +20,16 @@ jobs:
       - name: Insall dependencies
         run: pnpm i
 
-      - name: Deploy Project
-        run: echo 'Deploying...'
+      - name: Current directory
+        run: cwd
+        
+      - name: Building static website
+        run: pnpm run build
+
+      - name: Deploying to gh-pages
+        run: pnpm run deploy
+      
+
+      
 
 
